@@ -1,7 +1,7 @@
-const quotes = require('../../process/q.json');
-module.exports = app => {
+import quotes from '../../process/q.json';
+export default app => {
   app.get('/', (req, res) => {
-    res.send('Hello Quotes World');
+    res.send('Hello Quotes World Again');
   });
 
   app.get('/quotes', (req, res) => {
